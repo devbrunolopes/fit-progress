@@ -20,4 +20,8 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = .green
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        navigationController?.isNavigationBarHidden = true
+    }
 }
