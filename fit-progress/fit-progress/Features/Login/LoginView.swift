@@ -95,8 +95,12 @@ class LoginView: UIView {
     
     lazy var registerButton: UIButton = {
         let button = UIButton()
+        let attributes: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.black, .font: UIFont.systemFont(ofSize: 16)]
+        let boldAttributes: [NSAttributedString.Key: Any] = [.foregroundColor: UIColor.black, .font: UIFont.boldSystemFont(ofSize: 16)]
+        let attributedTitle = NSMutableAttributedString(string: "Ainda não tem conta?", attributes: attributes)
+        attributedTitle.append(NSAttributedString(string: " Cadastre-se", attributes: boldAttributes))
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitle("Ainda não tem conta? Cadastre-se", for: .normal)
+        button.setAttributedTitle(attributedTitle, for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         button.setTitleColor(UIColor.black, for: .normal)
         button.addTarget(self, action: #selector(didTapSignUpButton), for: .touchUpInside)
