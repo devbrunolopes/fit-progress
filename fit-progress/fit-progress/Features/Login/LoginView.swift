@@ -112,6 +112,7 @@ class LoginView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupViewcode()
+        configBackgroundColor()
     }
     
     required init?(coder: NSCoder) {
@@ -136,6 +137,41 @@ class LoginView: UIView {
     
     public func setupLoginViewDelegate(delegate: LoginViewDelegate?) {
         self.delegate = delegate
+    }
+    
+    public func configTextFielDelegate(delegate: UITextFieldDelegate) {
+        emailTextField.delegate = delegate
+        passwordTextField.delegate = delegate
+    }
+    
+    public func enableButton() {
+        if emailTextField.text != "" && passwordTextField.text != "" {
+            enableButton(true)
+        } else {
+            enableButton(false)
+        }
+    }
+    
+    public func getEmail() -> String {
+        return emailTextField.text ?? ""
+    }
+    
+    public func getPassword() -> String {
+        return passwordTextField.text ?? ""
+    }
+    
+    //MARK: - Private Functions
+    
+    private func enableButton(_ enable: Bool) {
+        if enable {
+            signInButton.isEnabled = true
+        } else {
+            signInButton.isEnabled = false
+        }
+    }
+    
+    private func configBackgroundColor() {
+        backgroundColor = .green
     }
 }
 
