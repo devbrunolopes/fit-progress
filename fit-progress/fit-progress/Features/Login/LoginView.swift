@@ -65,7 +65,7 @@ class LoginView: UIView {
         textField.placeholder = "Digite sua senha:"
         textField.textColor = .darkGray
         textField.autocapitalizationType = .none
-        textField.text = "123456789" //deletar
+//        textField.text = "123456789" //deletar
         textField.isSecureTextEntry = true
         return textField
     }()
@@ -113,6 +113,7 @@ class LoginView: UIView {
         super.init(frame: frame)
         setupViewcode()
         configBackgroundColor()
+        enableButton(false)
     }
     
     required init?(coder: NSCoder) {
@@ -139,12 +140,12 @@ class LoginView: UIView {
         self.delegate = delegate
     }
     
-    public func configTextFielDelegate(delegate: UITextFieldDelegate) {
+    public func setupTextFielDelegate(delegate: UITextFieldDelegate) {
         emailTextField.delegate = delegate
         passwordTextField.delegate = delegate
     }
     
-    public func enableButton() {
+    public func validateTextFieldToEnableButton() {
         if emailTextField.text != "" && passwordTextField.text != "" {
             enableButton(true)
         } else {
@@ -165,8 +166,10 @@ class LoginView: UIView {
     private func enableButton(_ enable: Bool) {
         if enable {
             signInButton.isEnabled = true
+            signInButton.setTitleColor(.white, for: .normal)
         } else {
             signInButton.isEnabled = false
+            signInButton.setTitleColor(.lightGray, for: .normal)
         }
     }
     
