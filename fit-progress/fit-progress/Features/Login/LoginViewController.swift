@@ -36,7 +36,6 @@ extension LoginViewController: LoginViewDelegate {
     
     func actionSignInButton() {
         //implementar navegação
-        print("BOLA")
     }
     
     func actionRegisterButton() {
