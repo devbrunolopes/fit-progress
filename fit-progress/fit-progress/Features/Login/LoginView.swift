@@ -35,37 +35,13 @@ class LoginView: UIView {
         return image
     }()
     
-    lazy var emailTextField: UITextField = {
-        let textField = UITextField()
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.autocorrectionType = .no
-        textField.backgroundColor = .white
-        textField.borderStyle = .roundedRect
-        textField.layer.cornerRadius = 7
-        textField.layer.borderColor = UIColor.black.cgColor
-        textField.layer.borderWidth = 1.0
-        textField.keyboardType = .emailAddress
-        textField.placeholder = "Digite seu email:"
-        textField.text = "brunolopes0203@gmail.com" //deletar
-        textField.textColor = .darkGray
-        textField.autocapitalizationType = .none
+    lazy var emailTextField: TextField = {
+        let textField = TextField(placeholderText: "Digite seu email:")
         return textField
     }()
     
-    lazy var passwordTextField: UITextField = {
-        let textField = UITextField()
-        textField.translatesAutoresizingMaskIntoConstraints = false
-        textField.autocorrectionType = .no
-        textField.backgroundColor = .white
-        textField.borderStyle = .roundedRect
-        textField.layer.cornerRadius = 7
-        textField.layer.borderColor = UIColor.black.cgColor
-        textField.layer.borderWidth = 1.0
-        textField.keyboardType = .default
-        textField.placeholder = "Digite sua senha:"
-        textField.textColor = .darkGray
-        textField.autocapitalizationType = .none
-//        textField.text = "123456789" //deletar
+    lazy var passwordTextField: TextField = {
+        let textField = TextField(placeholderText: "Digite sua senha:")
         textField.isSecureTextEntry = true
         return textField
     }()
