@@ -14,6 +14,7 @@
 		BE7730412968455500F7252C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7730402968455500F7252C /* LoginViewController.swift */; };
 		BE7730432968456100F7252C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7730422968456100F7252C /* LoginView.swift */; };
 		BE773047296848A800F7252C /* Viewcode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE773046296848A800F7252C /* Viewcode.swift */; };
+		BEC6A7B029699C7500B7BE8F /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC6A7AF29699C7500B7BE8F /* TextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BE7730402968455500F7252C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BE7730422968456100F7252C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		BE773046296848A800F7252C /* Viewcode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viewcode.swift; sourceTree = "<group>"; };
+		BEC6A7AF29699C7500B7BE8F /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		BE7730292968436E00F7252C /* fit-progress */ = {
 			isa = PBXGroup;
 			children = (
+				BEC6A7AD29699C5400B7BE8F /* Components */,
 				BE7730442968487000F7252C /* Protocols */,
 				BE77303E2968453800F7252C /* Features */,
 				BE77302A2968436E00F7252C /* AppDelegate.swift */,
@@ -100,6 +103,22 @@
 				BE773046296848A800F7252C /* Viewcode.swift */,
 			);
 			path = Viewcode;
+			sourceTree = "<group>";
+		};
+		BEC6A7AD29699C5400B7BE8F /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BEC6A7AE29699C5E00B7BE8F /* TextField */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BEC6A7AE29699C5E00B7BE8F /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				BEC6A7AF29699C7500B7BE8F /* TextField.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +194,7 @@
 				BE7730412968455500F7252C /* LoginViewController.swift in Sources */,
 				BE77302B2968436E00F7252C /* AppDelegate.swift in Sources */,
 				BE7730432968456100F7252C /* LoginView.swift in Sources */,
+				BEC6A7B029699C7500B7BE8F /* TextField.swift in Sources */,
 				BE77302D2968436E00F7252C /* SceneDelegate.swift in Sources */,
 				BE773047296848A800F7252C /* Viewcode.swift in Sources */,
 			);
