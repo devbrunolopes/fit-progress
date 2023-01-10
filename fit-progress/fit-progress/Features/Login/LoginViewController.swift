@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
 
 extension LoginViewController: LoginViewDelegate {
     func actionForgotPasswordButton() {
-        //implementar navegação
+        
     }
     
     func actionSignInButton() {
