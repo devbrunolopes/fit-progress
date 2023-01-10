@@ -22,7 +22,7 @@ class LoginView: UIView {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 40)
-        label.text = "Fit Progress"
+        label.text = "Progressão de Carga"
         return label
     }()
     
