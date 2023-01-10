@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         loginView?.setupLoginViewDelegate(delegate: self)
-//        loginView?.setupTextFielDelegate(delegate: self)
+        loginView?.setupTextFielDelegate(delegate: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
