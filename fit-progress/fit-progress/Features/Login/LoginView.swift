@@ -17,6 +17,8 @@ class LoginView: UIView {
 
     weak private var delegate: LoginViewDelegate?
     
+    var teste: Bool = true
+    
     lazy var loginLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
